@@ -302,92 +302,165 @@
             </div>
 
             <!-- FAQ-блок -->
+            <!-- FAQ-блок (уникализированный дизайн и текст) -->
             <div
-                style="margin-top: 50px; background-color: #1e293b; border-radius: 12px; padding: 35px; border: 1px solid #334155; position: relative; overflow: hidden;">
+                style="margin-top: 50px; background: linear-gradient(135deg, #1e293b 0%, #172033 100%); border-radius: 16px; padding: 40px; border: 1px solid #334155; position: relative; overflow: hidden;">
+
+                <!-- Декоративные элементы -->
                 <div
-                    style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #3b82f6, #2563eb);">
+                    style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #3b82f6, #8b5cf6, #10b981);">
+                </div>
+                <div
+                    style="position: absolute; top: -100px; right: -100px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(59, 130, 246, 0.08) 0%, transparent 70%); border-radius: 50%;">
+                </div>
+                <div
+                    style="position: absolute; bottom: -100px; left: -100px; width: 250px; height: 250px; background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, transparent 70%); border-radius: 50%;">
                 </div>
 
-                <h2 style="font-size: 24px; font-weight: 700; color: #ffffff; margin: 0 0 25px 0; text-align: center;">
-                    Частые вопросы
-                </h2>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                <!-- Заголовок -->
+                <div style="text-align: center; margin-bottom: 35px; position: relative;">
+                    <div
+                        style="display: inline-block; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(59, 130, 246, 0.3); color: #60a5fa; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600; margin-bottom: 15px; letter-spacing: 0.5px; text-transform: uppercase;">
+                        💬 Ответы на вопросы
+                    </div>
+                    <h2 style="font-size: 26px; font-weight: 700; color: #ffffff; margin: 0 0 10px 0;">
+                        Ответы на популярные вопросы
+                    </h2>
+                    <p style="font-size: 14px; color: #94a3b8; margin: 0;">Коротко о главном — чтобы вы не искали
+                        информацию долго
+                    </p>
+                </div>
 
-                    <div style="padding: 20px; background: rgba(59, 130, 246, 0.05); border-radius: 10px; border-left: 3px solid #3b82f6; transition: all 0.3s;"
-                        onmouseover="this.style.background='rgba(59, 130, 246, 0.1)'; this.style.transform='translateY(-3px)';"
-                        onmouseout="this.style.background='rgba(59, 130, 246, 0.05)'; this.style.transform='translateY(0)';">
+                <!-- Список вопросов -->
+                <div style="display: flex; flex-direction: column; gap: 15px; position: relative;">
+
+                    <!-- Вопрос 1 -->
+                    <div style="background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border-radius: 12px; padding: 25px; border: 1px solid #334155; display: flex; gap: 20px; align-items: flex-start; transition: all 0.3s; position: relative; overflow: hidden;"
+                        onmouseover="this.style.borderColor='#3b82f6'; this.style.transform='translateX(5px)';"
+                        onmouseout="this.style.borderColor='#334155'; this.style.transform='translateX(0)';">
                         <div
-                            style="font-size: 16px; font-weight: 600; color: #ffffff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 20px;">❓</span> Как попасть в рейтинг?
+                            style="position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #3b82f6, #2563eb);">
                         </div>
-                        <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.6;">
-                            Рейтинг формируется на основе независимого аудита: лицензий, отзывов пациентов, квалификации
-                            врачей и качества услуг. Оставьте заявку через форму выше.
-                        </p>
+                        <div
+                            style="flex: 0 0 56px; width: 56px; height: 56px; background: linear-gradient(135deg, #3b82f6, #2563eb); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #ffffff; box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);">
+                            01
+                        </div>
+                        <div style="flex: 1;">
+                            <h3
+                                style="font-size: 17px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: #60a5fa;">Как включить клинику в рейтинг?</span>
+                            </h3>
+                            <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.7;">
+                                Включение в рейтинг происходит по результатам независимой экспертизы. Мы анализируем
+                                наличие
+                                лицензий, реальные отзывы пациентов, профессиональный уровень врачей и качество
+                                предоставляемых
+                                услуг. Чтобы подать заявку — воспользуйтесь формой обратной связи выше.
+                            </p>
+                        </div>
                     </div>
 
-                    <div style="padding: 20px; background: rgba(59, 130, 246, 0.05); border-radius: 10px; border-left: 3px solid #3b82f6; transition: all 0.3s;"
-                        onmouseover="this.style.background='rgba(59, 130, 246, 0.1)'; this.style.transform='translateY(-3px)';"
-                        onmouseout="this.style.background='rgba(59, 130, 246, 0.05)'; this.style.transform='translateY(0)';">
+                    <!-- Вопрос 2 -->
+                    <div style="background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border-radius: 12px; padding: 25px; border: 1px solid #334155; display: flex; gap: 20px; align-items: flex-start; transition: all 0.3s; position: relative; overflow: hidden;"
+                        onmouseover="this.style.borderColor='#10b981'; this.style.transform='translateX(5px)';"
+                        onmouseout="this.style.borderColor='#334155'; this.style.transform='translateX(0)';">
                         <div
-                            style="font-size: 16px; font-weight: 600; color: #ffffff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 20px;">💰</span> Размещение платное?
+                            style="position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #10b981, #059669);">
                         </div>
-                        <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.6;">
-                            Базовое присутствие в каталоге — бесплатно. Премиум-размещение с расширенной карточкой и
-                            приоритетом — по отдельным условиям.
-                        </p>
+                        <div
+                            style="flex: 0 0 56px; width: 56px; height: 56px; background: linear-gradient(135deg, #10b981, #059669); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #ffffff; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);">
+                            02
+                        </div>
+                        <div style="flex: 1;">
+                            <h3
+                                style="font-size: 17px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: #6ee7b7;">Взимается ли плата за размещение?</span>
+                            </h3>
+                            <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.7;">
+                                Базовое размещение в каталоге предоставляется бесплатно. Для медицинских учреждений,
+                                заинтересованных в расширенных возможностях (детальная карточка, приоритетное
+                                отображение,
+                                дополнительные материалы), действуют индивидуальные условия сотрудничества.
+                            </p>
+                        </div>
                     </div>
 
-                    <div style="padding: 20px; background: rgba(59, 130, 246, 0.05); border-radius: 10px; border-left: 3px solid #3b82f6; transition: all 0.3s;"
-                        onmouseover="this.style.background='rgba(59, 130, 246, 0.1)'; this.style.transform='translateY(-3px)';"
-                        onmouseout="this.style.background='rgba(59, 130, 246, 0.05)'; this.style.transform='translateY(0)';">
+                    <!-- Вопрос 3 -->
+                    <div style="background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); border-radius: 12px; padding: 25px; border: 1px solid #334155; display: flex; gap: 20px; align-items: flex-start; transition: all 0.3s; position: relative; overflow: hidden;"
+                        onmouseover="this.style.borderColor='#8b5cf6'; this.style.transform='translateX(5px)';"
+                        onmouseout="this.style.borderColor='#334155'; this.style.transform='translateX(0)';">
                         <div
-                            style="font-size: 16px; font-weight: 600; color: #ffffff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="font-size: 20px;">⚡</span> Как быстро отвечают?
+                            style="position: absolute; top: 0; left: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, #8b5cf6, #7c3aed);">
                         </div>
-                        <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.6;">
-                            Все обращения обрабатываются в течение 1 рабочего дня. Срочные вопросы по телефону — в
-                            рабочее время редакции.
-                        </p>
+                        <div
+                            style="flex: 0 0 56px; width: 56px; height: 56px; background: linear-gradient(135deg, #8b5cf6, #7c3aed); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800; color: #ffffff; box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);">
+                            03
+                        </div>
+                        <div style="flex: 1;">
+                            <h3
+                                style="font-size: 17px; font-weight: 700; color: #ffffff; margin: 0 0 8px 0; display: flex; align-items: center; gap: 10px;">
+                                <span style="color: #c4b5fd;">Каковы сроки обработки обращений?</span>
+                            </h3>
+                            <p style="font-size: 14px; color: #cbd5e1; margin: 0; line-height: 1.7;">
+                                Каждое обращение рассматривается в течение одного рабочего дня. Если ваш вопрос требует
+                                оперативного
+                                решения — свяжитесь с редакцией по телефону в рабочие часы, и мы ответим
+                                незамедлительно.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
+
+                <!-- Дополнительный призыв -->
+                <div
+                    style="margin-top: 30px; padding: 20px 25px; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%); border-radius: 12px; border: 1px solid rgba(59, 130, 246, 0.2); display: flex; align-items: center; gap: 15px; position: relative;">
+                    <div
+                        style="flex: 0 0 44px; width: 44px; height: 44px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                        💡
+                    </div>
+                    <div style="flex: 1;">
+                        <div style="font-size: 14px; color: #ffffff; font-weight: 600; margin-bottom: 3px;">Не нашли
+                            ответ на свой
+                            вопрос?</div>
+                        <div style="font-size: 13px; color: #cbd5e1; line-height: 1.5;">Напишите нам через форму выше
+                            или на почту —
+                            мы ответим в ближайшее время.</div>
+                    </div>
+                </div>
+
             </div>
 
-        </div>
-    </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div>
+                            <h4>О проекте</h4>
+                            <p style="line-height: 1.6;">Рейтинг лучших наркологических клиник России. Мы помогаем найти
+                                качественную и честную медицинскую помощь для лечения алкоголизма и наркомании.</p>
+                        </div>
+                        <div>
+                            <h4>Полезные ссылки</h4>
+                            <ul>
+                                <li><a href="./kak-podobrat-kliniky.html">Как подобрать клинику</a></li>
+                                <li><a href="./o-servise.html">О сервисе</a></li>
+                                <li><a href="./contacts.html">Связаться с нами</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Правовая информация</h4>
+                            <p style="font-size: 12px; line-height: 1.5;">Информация, представленная на сайте, носит
+                                ознакомительный характер. Требуется обязательная консультация со специалистом. 18+</p>
+                        </div>
+                    </div>
+                    <div
+                        style="border-top: 1px solid #334155; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #94a3b8;">
+                        <p>© 2026 reiting-narkoclinic.ru — Все права защищены.</p>
+                    </div>
+                </div>
+            </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <h4>О проекте</h4>
-                    <p style="line-height: 1.6;">Рейтинг лучших наркологических клиник России. Мы помогаем найти
-                        качественную и честную медицинскую помощь для лечения алкоголизма и наркомании.</p>
-                </div>
-                <div>
-                    <h4>Полезные ссылки</h4>
-                    <ul>
-                        <li><a href="./kak-podobrat-kliniky.html">Как подобрать клинику</a></li>
-                        <li><a href="./o-servise.html">О сервисе</a></li>
-                        <li><a href="./contacts.html">Связаться с нами</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Правовая информация</h4>
-                    <p style="font-size: 12px; line-height: 1.5;">Информация, представленная на сайте, носит
-                        ознакомительный характер. Требуется обязательная консультация со специалистом. 18+</p>
-                </div>
-            </div>
-            <div
-                style="border-top: 1px solid #334155; margin-top: 40px; padding-top: 20px; text-align: center; font-size: 13px; color: #94a3b8;">
-                <p>© 2026 reiting-narkoclinic.ru — Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./scripts/main.js" type="module"></script>
+            <script src="./scripts/main.js" type="module"></script>
 
 </body>
 
